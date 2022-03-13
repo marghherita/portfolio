@@ -23,8 +23,11 @@ const Footer = () => {
           </a>
         </li>
       </ul>
-      <div>
+      <div className={styles.mail}>
         <a href = "mailto: margherita.grasso3@gmail.com">margherita.grasso3@gmail.com</a>
+      </div>
+      <div className={styles.mail_mobile}>
+        <a href = "mailto: margherita.grasso3@gmail.com">hh@gm.com</a>
       </div>
     </footer>
   );

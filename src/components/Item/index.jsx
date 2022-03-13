@@ -6,8 +6,10 @@ const Item = () => {
     <div className={styles.items}>
       <div className={styles.number}>01</div>
 
+      <span className={styles.line}></span>
+
       <Link to="/progetti">
-        <h1>'Ddocu</h1>
+        <h1 className={styles.title}>'Ddocu</h1>
       </Link>
     </div>
   );

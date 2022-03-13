@@ -13,8 +13,9 @@ const Header = () => {
   return (
     <header>
       <Link to="/">
-        <div onClick={() => setIsOpen(false)} className={styles.logo}>
-          {isOpen ? <h1 style={{color: '#fd5602'}}>HH</h1> : <h1>MARGHHERITA</h1>}
+        <div onClick={() => setIsOpen(false)}>
+          {isOpen ? "" : <h1 className={styles.menu_mobile}>HH</h1>}
+          {isOpen ? <h1 style={{color: '#fd5602'}}>HH</h1> : <h1 className={styles.logo} >MARGHHERITA</h1>}
         </div>
       </Link>
       <Link to="/progetti">

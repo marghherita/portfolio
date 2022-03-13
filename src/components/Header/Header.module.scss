@@ -1,40 +1,56 @@
 @import "../../utils/General.scss";
 
 header {
+  position: fixed;
+  z-index: 3;
 
-    position: fixed;
-    z-index: 3;
+  width: 90%;
 
-    width: 90%;
+  top: 40px;
+  left: 5%;
 
-    top: 40px;
-    left: 5%;
-    
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 
+  .logo {
+    font-size: 1em;
+    display: block;
+  }
 
+  .menu_mobile {
+    display: none;
+  }
+
+  .link_containers {
+    p {
+      transition: 1s all ease;
+    }
+  }
+
+  .hamburger-react {
+    color: $white;
+
+    margin: 300px;
+  }
+  .h_menu {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  header {
     .logo {
-        font-size: 0.6rem;
+      display: none;
     }
-
-    .link_containers {
-        p {
-            transition: 1s all ease;
-        }
+    .menu_mobile {
+      width: 48px;
+      height: 48px;
+      text-align: center;
+      display: block;
+      font-size: 1.2em;
+      padding-top: 0.6rem;
     }
-
-    .hamburger-react {
-        color: $white;
-
-  margin: 300px;
-    }
-    .h_menu {
-        width: 30px;
-        height: 30px;
-        
-
-
-    }
+  }
 }

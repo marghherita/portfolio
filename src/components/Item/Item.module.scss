@@ -17,8 +17,9 @@
   // &:first-child {
   //   padding-top: 45vh!important;
   // }
-
-
+  line {
+    display: none;
+  }
 
   .number {
     font-size: 12px;
@@ -26,9 +27,44 @@
     margin-right: 40px;
   }
 
-  h1 {
+  .title {
     width: 50%;
     font-size: 6vw;
-    z-index: 0;
+    z-index: 1;
+  }
+}
+
+@media screen and (max-width: 844px) {
+  .items {
+    padding: 45vh 0;
+    left: 0;
+    flex-direction: column;
+
+    .line {
+      position: fixed;
+      display: block;
+      z-index: 0;
+
+      position: absolute;
+      left: 40vw;
+      top: 0;
+      width: 1px;
+      height: 100vh;
+      background-color: grey;
+      opacity: 0.3;
+    }
+
+    // a {
+    //   transform: rotate(90deg);
+    // }
+
+    .number {
+ 
+      margin-right: 0;
+    }
+
+    .title {
+      font-size: 4rem;
+    }
   }
 }
