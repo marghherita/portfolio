@@ -7,8 +7,8 @@ import Header from './components/Header';
 import Footer from './components/Footer';
 import Loading from './components/Loading';
 
-const Home = lazy(() => import("./Pages/Home"));
-const Projects = lazy(() => import("./Pages/Projects"));
+const Home = lazy(() => import("./pages/Home"));
+const Projects = lazy(() => import("./pages/Projects"));
 
 function App() {
   return (
