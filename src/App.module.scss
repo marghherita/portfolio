@@ -1,0 +1,8 @@
+@import '../src/utils/General.scss';
+
+.bg_page {
+  width: 100vw;
+  height: 100vh;
+  background-color: $main;
+  overflow-y: scroll;
+}

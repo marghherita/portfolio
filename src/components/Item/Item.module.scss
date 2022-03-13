@@ -1,0 +1,33 @@
+@import "../../utils/General.scss";
+
+.items {
+  width: 80%;
+  padding: 40vh 0;
+  margin: auto;
+  color: $white;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-weight: 700;
+  position: relative;
+
+  left: 5%;
+
+  // &:first-child {
+  //   padding-top: 45vh!important;
+  // }
+
+
+  .number {
+    font-size: 12px;
+    opacity: 0.5;
+    margin-right: 40px;
+  }
+
+  h1 {
+    width: 50%;
+    font-size: 6vw;
+    z-index: 0;
+  }
+}

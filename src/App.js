@@ -1,13 +1,50 @@
-import Home from './pages/Home';
-import './App.css';
+import { Routes, Route } from "react-router-dom";
+import { lazy, Suspense } from 'react';
+
+import styles from './App.module.scss'
+
+import Header from './components/Header';
+import Footer from './components/Footer';
+import Loading from './components/Loading';
+
+const Home = lazy(() => import("./Pages/Home"));
+const Projects = lazy(() => import("./Pages/Projects"));
 
 function App() {
   return (
-    <body>
-      <div className="App">
-        <Home />
-      </div>
-    </body>
+    <>
+      <Header />
+
+      <Routes>
+
+        <Route
+          path='/'
+          element=
+          {<Suspense fallback={<Loading />}>
+            <div className={styles.bg_page}>
+              <Home />
+            </div>
+          </Suspense>}>
+        </Route>
+
+        <Route
+          path='/progetti'
+          element=
+          {<Suspense fallback={<Loading />}>
+            <div className={styles.bg_page}>
+              <Projects />
+            </div>
+          </Suspense>}>
+        </Route>
+
+      </Routes>
+
+      <Footer />
+
+
+
+    </>
+
   );
 }
 
