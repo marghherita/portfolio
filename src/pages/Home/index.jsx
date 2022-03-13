@@ -1,6 +1,8 @@
 import styles from "./Home.module.scss";
 import Item from "../../components/Item";
 
+import AnchorLink from "react-anchor-link-smooth-scroll";
+
 const Home = () => {
   return (
     <div className={styles.bg_item}>
@@ -22,7 +24,7 @@ const Home = () => {
         />
 
         <text>
-          <textPath href="#MyPath" fill="white">
+          <textPath href="#MyPath" fill="#fd5602">
             SCROLL TO SEE MORE
           </textPath>
         </text>

@@ -3,7 +3,7 @@
 header {
 
     position: fixed;
-    z-index: 2;
+    z-index: 3;
 
     width: 90%;
 
@@ -19,14 +19,22 @@ header {
         font-size: 0.6rem;
     }
 
+    .link_containers {
+        p {
+            transition: 1s all ease;
+        }
+    }
+
+    .hamburger-react {
+        color: $white;
+
+  margin: 300px;
+    }
     .h_menu {
         width: 30px;
         height: 30px;
         
-        svg {
-            color: $white;
-            width: 30px;
-            height: 30px;
-        }
+
+
     }
 }
