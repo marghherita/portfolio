@@ -1,4 +1,4 @@
-// import styles from "./Footer.module.scss";
+import styles from "./Footer.module.scss";
 
 import { AiOutlineInstagram} from "react-icons/ai";
 import { FiLinkedin, FiGithub } from "react-icons/fi";
@@ -6,7 +6,7 @@ import { FiLinkedin, FiGithub } from "react-icons/fi";
 const Footer = () => {
   return (
     <footer>
-      <ul > 
+      <ul className={styles.icon_list}> 
         <li>
           <a href="https://www.instagram.com/marghherita/">
             <AiOutlineInstagram />
