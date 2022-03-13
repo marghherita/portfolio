@@ -10,9 +10,22 @@
 
   z-index: -1;
   background-color: $main;
-  transform: translate(0%);
-  // transition: 0.3s all ease;
 
+  animation: menuOpen 0.5s ease;
+
+
+  @keyframes menuOpen {
+    0% {
+      transform: translate(-100%);
+    }
+    100% {
+      transform: translate(0%);
+    }
+    
+  }
+
+  
+  
   .list_item {
     display: flex;
     flex-direction: column;

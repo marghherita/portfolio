@@ -1,17 +1,5 @@
 @import "../../utils/General.scss";
 
-img {
-  // background-image: url('../../img/phone_1.png');
-  // background-repeat: no-repeat;
-  // transform: scale(0.8);
-  left: 30%;
-  height: 100%;
-  width: 70%;
-  top: 10vh;
-  position: fixed;
-  // height: 100%;
-  // width: 100%;
-}
 
 .circle_svg {
   position: absolute;
@@ -21,6 +9,7 @@ img {
   cursor: pointer;
 
   top: 5%;
+  left: 2%;
   width: 300px;
   height: 300px;
   animation: rotateText 30s linear infinite;

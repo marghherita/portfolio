@@ -18,14 +18,18 @@ footer {
     top: 50%;
     margin-top: -50px;
     li {
-        margin: 10px 0;
+      margin: 10px 0;
     }
   }
 
-  p {
-      color: $white;
-      font-weight: 300;
-      letter-spacing: 1px;
-      font-size: 0.8em;
+  a {
+    color: $white;
+    font-weight: 300;
+    letter-spacing: 1px;
+    font-size: 0.8em;
+
+    &:hover {
+      color: #fd5602;
+    }
   }
 }

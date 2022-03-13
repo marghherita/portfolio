@@ -24,7 +24,7 @@ const Footer = () => {
         </li>
       </ul>
       <div>
-        <p>margherita.grasso3@gmail.com</p>
+        <a href = "mailto: margherita.grasso3@gmail.com">margherita.grasso3@gmail.com</a>
       </div>
     </footer>
   );

@@ -5,4 +5,9 @@
   height: 100vh;
   background-color: $main;
   overflow-y: scroll;
+
 }
+
+::-webkit-scrollbar {
+  display: none;
+  }
