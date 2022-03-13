@@ -1,0 +1,31 @@
+@import "../../utils/General.scss";
+
+footer {
+  position: fixed;
+
+  width: 90%;
+  bottom: 40px;
+  left: 5%;
+
+  svg {
+    color: $white;
+    width: 20px;
+    height: 20px;
+  }
+
+  ul {
+    position: fixed;
+    top: 50%;
+    margin-top: -50px;
+    li {
+        margin: 10px 0;
+    }
+  }
+
+  p {
+      color: $white;
+      font-weight: 300;
+      letter-spacing: 1px;
+      font-size: 0.8em;
+  }
+}
